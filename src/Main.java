@@ -16,5 +16,12 @@ public class Main {
         }
 
         System.out.println();
+        System.out.println();
+
+        RLDIterator rldIterator = new RLDIterator();
+
+        while (rldIterator.hasNext()){
+            System.out.print(rldIterator.next());
+        }
     }
 }
