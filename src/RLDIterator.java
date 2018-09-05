@@ -14,13 +14,17 @@ public class RLDIterator implements Iterator {
     RLDIterator(){
         currNum=0;
         currChar= '*';
-        char[] nameArray = "1B1r1e2t1s".toCharArray();
+        initializeIterator("1B1r1e2t1s");
+
+    }
+
+    private void initializeIterator(String nameString){
+        char[] nameArray = nameString.toCharArray();
         ArrayList<Character> nameArrayList= new ArrayList<Character>();
         for (char nameChar : nameArray){
             nameArrayList.add(nameChar);
         }
         itr = nameArrayList.listIterator();
-
     }
 
     @Override
