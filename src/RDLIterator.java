@@ -10,6 +10,11 @@ public class RDLIterator implements Iterator {
     private int currNum;
     private char currChar;
 
+    RDLIterator(String nameString){
+        currNum=0;
+        currChar='*';
+        initializeIterator(nameString);
+    }
 
     RDLIterator(){
         currNum=0;

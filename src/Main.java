@@ -18,5 +18,11 @@ public class Main {
         while (rDLIterator.hasNext()){
             System.out.print(rDLIterator.next());
         }
+        System.out.println();
+
+        rDLIterator = new RDLIterator("1M1a2t");
+        while (rDLIterator.hasNext()){
+            System.out.print(rDLIterator.next());
+        }
     }
 }
