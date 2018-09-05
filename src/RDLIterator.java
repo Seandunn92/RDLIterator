@@ -36,6 +36,7 @@ public class RDLIterator implements Iterator {
 
         if(currNum==0)
         return itr.hasNext();
+        else
         return true;
     }
 
