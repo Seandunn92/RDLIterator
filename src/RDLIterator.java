@@ -4,18 +4,17 @@ import java.util.Iterator;
 /**
  * Created by seandunn92 on 9/4/18.
  */
-public class RLDIterator implements Iterator {
+public class RDLIterator implements Iterator {
 
     private Iterator<Character> itr;
     private int currNum;
     private char currChar;
 
 
-    RLDIterator(){
+    RDLIterator(){
         currNum=0;
         currChar= '*';
         initializeIterator("1B1r1e2t1s");
-
     }
 
     private void initializeIterator(String nameString){
